@@ -5,15 +5,25 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "node index.js",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "axios": "^1.7.9",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mongodb": "^6.13.0",
+    "mongoose": "^8.10.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
+    "react-router-dom": "^7.1.5",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1"
   },

@@ -1,32 +1,57 @@
 import React from "react";
-import Img1 from "../../assets/shirt/shirt.png";
-import Img2 from "../../assets/shirt/shirt2.png";
-import Img3 from "../../assets/shirt/shirt3.png";
+import Img1 from "../../assets/shirt/pdt1.webp";
+import Img2 from "../../assets/shirt/pdt2.webp";
+import Img3 from "../../assets/shirt/pdt3.jpg";
+import Img4 from "../../assets/shirt/pdt4.jpg";
+import Img5 from '../../assets/shirt/pdt5.jpg';
+import Img6  from '../../assets/shirt/pdt6.jpg';
 import { FaStar } from "react-icons/fa";
 
 const ProductsData = [
   {
     id: 1,
     img: Img1,
-    title: "Casual Wear",
+    title: "Cadbury Fruit and Nuts",
     description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Indulge in the perfect combination of smooth Cadbury chocolate, crunchy nuts, and fruity goodness in every bite. A delicious treat for chocolate lovers!",
   },
   {
     id: 2,
     img: Img2,
-    title: "Printed shirt",
+    title: "Kinder Joy - Harry Potter Edition",
     description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Unlock the magic with Kinder Joy's Harry Potter Edition! Enjoy a delicious treat and collect exclusive, enchanting surprises from the wizarding world.",
   },
   {
     id: 3,
     img: Img3,
-    title: "Women shirt",
+    title: "Ferrero Rocher",
     description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Experience the luxury of Ferrero Rocher—crisp wafers, creamy chocolate, and a whole hazelnut, all wrapped in gold! A premium treat that’s perfect for indulging or gifting.",
+  },
+  {
+    id: 4,
+    img: Img4,
+    title: "Doritos Nachos",
+    description:
+      "Get your crunch on with Doritos Nachos! The perfect snack for any occasion, packed with bold and cheesy flavors. A deliciously addictive treat.",
+  },
+  {
+    id: 5,
+    img: Img5,
+    title: "Amul Fresh Cream",
+    description:
+      "Amul Fresh Cream is the perfect ingredient for your desserts, curries, or beverages. Rich, creamy, and versatile—bring out the best flavors in every dish.",
+  },
+  {
+    id: 6,
+    img: Img6,
+    title: "Buy 2 Get 1 Free Protein Bars",
+    description:
+      "Stock up on healthy snacks with our Buy 2 Get 1 Free Protein Bars offer! Packed with high-quality protein, these bars are perfect for fueling your day.",
   },
 ];
+
 const TopProducts = ({ handleOrderPopup }) => {
   return (
     <div>
@@ -40,16 +65,18 @@ const TopProducts = ({ handleOrderPopup }) => {
             Best Products
           </h1>
           <p data-aos="fade-up" className="text-xs text-gray-400">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
-            asperiores modi Sit asperiores modi
+            Discover our top-rated products, loved for their quality, taste, and value. These are customer favorites and sure to delight you!
           </p>
         </div>
         {/* Body section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center">
+        <div
+          style={{ margin: "20px 0px" }}
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-16 md:gap-30 place-items-center"
+        >
           {ProductsData.map((data) => (
             <div
               data-aos="zoom-in"
-              className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group max-w-[300px]"
+              className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group max-w-[400px]"
             >
               {/* image section */}
               <div className="h-[100px]">

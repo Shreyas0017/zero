@@ -1,0 +1,117 @@
+
+*::-webkit-scrollbar{
+    display: none;
+}
+.vside{
+    position:fixed;
+    top:105px;
+    left:10px;
+    width:30%;
+    height: 81%;
+    
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.product-row{
+    width:100%;
+    height:90%;
+    overflow-y: scroll;
+}
+
+#product-card {
+    width: 90%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    margin: 12px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Aligns image & text neatly */
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    gap: 15px; /* Ensures proper spacing between image & text */
+}
+
+#product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Fixes image size & ensures full visibility */
+.product-image {
+    height: 60px;
+    max-width: 50px; /* Prevents width stretching */
+    object-fit: contain; /* Ensures full image visibility */
+    border-radius: 8px;
+}
+
+/* Ensures text is neatly aligned */
+.product-info {
+    flex: 1;
+}
+
+.product-info h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.product-info p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    margin: 4px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vside_head{
+    width:90%;
+    height:50px;
+    border-radius: 5px;
+
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.vside_head h1 {
+    display: inline-block;
+    font-size: 24px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #ff9100, #ffd900);
+    background-size: 200% 100%;
+    animation: fillAnimation 2s infinite alternate;
+}
+
+/* Animation Keyframes */
+@keyframes fillAnimation {
+    0% {
+        background-position: -100% 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}

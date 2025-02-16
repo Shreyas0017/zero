@@ -68,7 +68,7 @@ const Vside = () => {
   return (
     <div className='vside'>
         <div style={{fontWeight:600}} className="vside_head">
-            <h1>Products Availavail</h1>
+            <h1>Products Available</h1>
         </div>
       <div className='product-row'>
         {products.map((product) => (

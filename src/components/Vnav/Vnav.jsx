@@ -3,7 +3,7 @@
 
 import React from 'react'
 import './Vnav.css'
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/logo1.png";
 import { IoMdSearch } from "react-icons/io";
 import { FaShoppingCart } from "react-icons/fa";
 
@@ -14,19 +14,16 @@ import { IoMdArrowDropdown } from "react-icons/io";
 const Vnav = () => {
     return (
         <div className='vnav'>
-            <div className="vicon font-bold text-2xl sm:text-3xl flex gap-2">
+            <div className="vicon font-bold text-1xl sm:text-2xl flex gap-2">
                 <img src={Logo} alt="Logo" className="w-20" />
-                Shopsy
+                ZeroMargin
 
             </div>
             <div className="v_delivery">
                 <h1 style={{ fontWeight: 600, width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>Delivery in 8 min  <IoMdArrowDropdown style={{ margin: "0px  10px" }} /></h1>
                 <div style={{width:"100%"}} className="add">
-                <p>James Anderson
-                    456 Maple Avenue
-                    Apt 12B
-                    Los Angeles, CA 90015
-                    United States</p>
+                <p>
+                            Double Slash JU Salt Lake Campus,Kolkata</p>
 
                 </div>
                 

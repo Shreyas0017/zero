@@ -53,6 +53,9 @@ const ProductsData = [
 ];
 
 const TopProducts = ({ handleOrderPopup }) => {
+  const handleOrderNow = ()=>{
+    window.location.href = '/viewpdts'
+  }
   return (
     <div>
       <div className="container">
@@ -71,15 +74,15 @@ const TopProducts = ({ handleOrderPopup }) => {
         {/* Body section */}
         <div
           style={{ margin: "20px 0px" }}
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-16 md:gap-30 place-items-center"
+          className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-3 gap-16 md:gap-30 place-items-center"
         >
           {ProductsData.map((data) => (
             <div
               data-aos="zoom-in"
-              className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group max-w-[400px]"
+              className="rounded-2xl  bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group max-w-[400px]"
             >
               {/* image section */}
-              <div className="h-[100px]">
+              <div className="h-[100px] ">
                 <img
                   src={data.img}
                   alt=""
@@ -87,7 +90,7 @@ const TopProducts = ({ handleOrderPopup }) => {
                 />
               </div>
               {/* details section */}
-              <div className="p-4 text-center">
+              <div className="p-4 text-center hover:bg-black/80">
                 {/* star rating */}
                 <div className="w-full flex items-center justify-center gap-1">
                   <FaStar className="text-yellow-500" />
@@ -101,7 +104,7 @@ const TopProducts = ({ handleOrderPopup }) => {
                 </p>
                 <button
                   className="bg-primary hover:scale-105 duration-300 text-white py-1 px-4 rounded-full mt-4 group-hover:bg-white group-hover:text-primary"
-                  onClick={handleOrderPopup}
+                  onClick={handleOrderNow}
                 >
                   Order Now
                 </button>

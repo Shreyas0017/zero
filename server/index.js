@@ -38,6 +38,7 @@ app.post("/place-order", async (req, res) => {
 
     try {
         await orderModel.insertMany(orders.map(order => ({
+            date:order.date,
             oid: order.id,
             name: order.name,
             image: order.image,
@@ -66,6 +67,14 @@ app.get('/fetch',(req,res)=>{
 app.delete('/delete/:id',(req,res)=>{
     const {id} = req.params;
     orderModel.findByIdAndDelete(id).then((respond)=>{
+        res.json(respond)
+    }).catch((error)=>{
+        console.log(error.message)
+    })
+})
+//delete all-----------------
+app.delete('/deleteall',(req,res)=>{
+    orderModel.deleteMany({}).then((respond)=>{
         res.json(respond)
     }).catch((error)=>{
         console.log(error.message)

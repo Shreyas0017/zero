@@ -1,12 +1,14 @@
 import mongoose from "mongoose";  // ✅ Use import instead of require
 
-const orderSchema = new mongoose.Schema({  // ✅ Add "new" before mongoose.Schema
+const orderSchema = new mongoose.Schema({
+    date: String,  // ✅ Add "new" before mongoose.Schema
     oid: Number,
     name: String,
     image: String,
     count: Number,
-    price: Number,  // ✅ Add price field
-    offer: String   // ✅ Add offer field
+    price: Number,  
+    offer: String 
+    
 });
 
 const orderModel = mongoose.model("orders", orderSchema);

@@ -1,0 +1,11 @@
+
+
+#display_name{
+    width:400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: whitesmoke;
+    height: 40px;
+}

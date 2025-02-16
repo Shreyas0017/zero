@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { auth } from "../../firebaseConfig"; // Import Firebase auth
+import { auth } from "../../firebaseconfig"; // Import Firebase auth
 import Logo from "../../assets/logo1.png";
 import "./Navbar.css"
 

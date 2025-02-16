@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { auth, provider, signInWithPopup } from "../../firebaseConfig";
+import { auth, provider, signInWithPopup } from "../../firebaseconfig";
 import { FcGoogle } from "react-icons/fc"; // Google icon
 
 const GoogleAuth = ({ setUser }) => {

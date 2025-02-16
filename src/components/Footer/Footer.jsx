@@ -113,11 +113,14 @@ const Footer = () => {
                   <FaMobileAlt />
                   <p>+91 9800567487</p>
                 </div>
+                <div className="text-white text-xl mt-3">
+                <p>All products are non refundable.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

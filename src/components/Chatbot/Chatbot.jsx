@@ -7,7 +7,7 @@ const Chatbot = () => {
   const [inputValue, setInputValue] = useState("");
 
   const api_call = async (script) => {
-    const apikey = "AIzaSyC6yIW-kR0l2IAyRSyX2E2rDn-QMNxPEuU";
+    const apikey = import.meta.env.VITE_CHATBOT_API;
     const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apikey}`;
     const data = { contents: [{ parts: [{ text: script }] }] };
     const headers = { "Content-Type": "application/json" };

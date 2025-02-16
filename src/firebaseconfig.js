@@ -3,7 +3,7 @@ import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from "firebase/
 
 // Firebase Configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBbB70b8Mw2F7eU0WGQva4IeefJ8LEpKXo",
+    apiKey: import.meta.env.VITE_FIREBASE_API,
     authDomain: "zeromargin-7c436.firebaseapp.com",
     projectId: "zeromargin-7c436",
     storageBucket: "zeromargin-7c436.appspot.com", // Corrected
